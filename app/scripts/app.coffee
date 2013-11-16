@@ -1,10 +1,11 @@
 'use strict'
 
 angular.module('folioupApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
+  'ngCookies'
+  'ngResource'
+  'ngSanitize'
   'ngRoute'
+  'wu.masonry'
 ])
   .config ['$routeProvider', ($routeProvider) ->
     $routeProvider

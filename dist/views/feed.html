@@ -1,3 +1,12 @@
 <p>This is the feed view.</p>
 
 <p>{{test}}</p>
+
+<div id="wrapper">
+  <masonry column-width="200" ng-hide="list">
+    <div class="masonry-brick" ng-repeat="user in users">
+      <p>{{user.name}}</p>
+      <img ng-src="{{user.image}}" class="img-rounded">
+    </div>
+  </masonry>
+</div>
