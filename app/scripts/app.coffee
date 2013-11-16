@@ -9,8 +9,8 @@ angular.module('folioupApp', [
   .config ['$routeProvider', ($routeProvider) ->
     $routeProvider
       .when '/',
-        templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
+        templateUrl: 'views/feed.html'
+        controller: 'feedCtrl'
       .otherwise
         redirectTo: '/'
   ]
