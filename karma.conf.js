@@ -17,6 +17,7 @@ module.exports = function(config) {
       'app/bower_components/angular-cookies/angular-cookies.js',
       'app/bower_components/angular-sanitize/angular-sanitize.js',
       'app/bower_components/angular-route/angular-route.js',
+      'app/bower_components/angular-masonry/angular-masonry.js',
       'app/scripts/*.coffee',
       'app/scripts/**/*.coffee',
       'test/mock/**/*.coffee',
@@ -33,10 +34,8 @@ module.exports = function(config) {
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,
 
-
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
-
 
     // Start these browsers, currently available:
     // - Chrome
@@ -46,7 +45,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
