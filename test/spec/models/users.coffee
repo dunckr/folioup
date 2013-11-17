@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: Users', ->
   users = null
 

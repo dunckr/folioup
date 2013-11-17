@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: top', () ->
 
   element = scope = currentUser = null
@@ -15,7 +13,7 @@ describe 'Directive: top', () ->
     scope.$digest()
 
   it 'should have image', ->
-    expect( element.find('img').attr('src')).toEqual 'URL'
+    expect(element.find('img').attr('src')).toEqual 'URL'
 
   it 'should have current user', ->
     expect(element.find('li').eq(1).text()).toEqual 'NAME'

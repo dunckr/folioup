@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: Project', ->
   project = null
 

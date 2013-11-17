@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: taskBlock', () ->
   element = scope = null
   task =

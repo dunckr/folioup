@@ -1,16 +1,22 @@
-'use strict'
-
 describe 'Directive: sketch', () ->
 
-  # load the directive's module
+  element = scope = null
+
   beforeEach module 'folioupApp'
-
-  scope = {}
-
-  beforeEach inject ($controller, $rootScope) ->
+  beforeEach inject (_$rootScope_, $compile) ->
+    $rootScope = _$rootScope_
     scope = $rootScope.$new()
-
-  it 'should make hidden element visible', inject ($compile) ->
     element = angular.element '<sketch></sketch>'
     element = $compile(element) scope
-    expect(element.text()).toBe 'this is the sketch directive'
+    scope.$digest()
+
+  it 'should have image', ->
+    expect(element.find('img').attr('src')).toEqual 'URL'
+
+  it 'should have current user', ->
+    expect(element.find('li').eq(1).text()).toEqual 'NAME'
+
+  it 'should be able to logout', ->
+    spyOn scope, 'logout'
+    element.find('button').triggerHandler 'click'
+    expect(scope.logout).toHaveBeenCalled()

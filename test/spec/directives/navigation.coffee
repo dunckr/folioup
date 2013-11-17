@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: navigation', () ->
 
   scope = element = null

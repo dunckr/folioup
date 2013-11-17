@@ -1,7 +1,7 @@
 class UserCtrl
 
   constructor: (@$scope, request, $routeParams) ->
-    @name = $routeParams.name
+    @name = $routeParams.user
     @$scope.user = request.getUser @name
 
 angular.module('folioupApp')

@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: CurrentUser', () ->
 
   currentUser = request = $location = null

@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: Post', ->
   post = null
 

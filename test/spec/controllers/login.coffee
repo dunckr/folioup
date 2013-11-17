@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: LoginCtrl', () ->
   loginCtrl = scope = currentUser = null
   user =

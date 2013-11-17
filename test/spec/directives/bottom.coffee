@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: bottom', () ->
 
   scope = element = null

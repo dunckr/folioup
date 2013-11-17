@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: ProjectCtrl', () ->
   projectCtrl = scope = request = $routeParams = null
 

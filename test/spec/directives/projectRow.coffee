@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: projectRow', () ->
   element = scope = null
   project =

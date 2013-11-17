@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: Tasks', ->
   tasks = null
   beforeEach module 'folioupApp'

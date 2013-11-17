@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Directive: post', () ->
   element = scope = null
   post =

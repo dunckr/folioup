@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: TaskCtrl', () ->
   taskCtrl = scope = request = null
 

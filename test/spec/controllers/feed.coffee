@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: FeedCtrl', () ->
   feedCtrl = scope = $rootScope = request = null
 

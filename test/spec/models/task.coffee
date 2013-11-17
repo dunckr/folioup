@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Service: Task', ->
   task = null
   data = ->

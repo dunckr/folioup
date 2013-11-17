@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: UsersCtrl', () ->
   usersCtrl = scope = request = null
 

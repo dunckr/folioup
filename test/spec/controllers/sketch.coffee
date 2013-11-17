@@ -1,5 +1,3 @@
-'use strict'
-
 describe 'Controller: SketchCtrl', () ->
 
   # load the controller's module
