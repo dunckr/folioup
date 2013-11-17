@@ -4,12 +4,14 @@ angular.module('folioupApp')
       image = $scope.post?.image
       if image?
 
-        # console.log element.context
         ctx = element[0].getContext '2d'
+
+
         img = new Image()
         img.src = image
+
         img.onload = ->
-           ctx.drawImage img,0,0
+          ctx.drawImage img,0,0
 
         drawing = false
 
@@ -32,7 +34,6 @@ angular.module('folioupApp')
 
         element.bind 'mouseup', (event) =>
           drawing = false
-
 
         draw = (lX, lY, cX, cY) ->
           ctx.moveTo lX, lY

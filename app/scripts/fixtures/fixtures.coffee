@@ -4,6 +4,16 @@ angular.module('folioupApp')
     projects: ->
       [
         name: 'Electronics'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+        priority: 'high'
+        assignees: ['chadengle','ManikRathee']
+      ,
+        name: 'Electronics'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+        priority: 'high'
+        assignees: ['chadengle','ManikRathee']
       ]
 
     users: ->

@@ -5,8 +5,11 @@
 
 <div ng-repeat="post in posts">
   <p>{{post.comment}}</p>
-  <img ng-src="{{post.image}}" class="img-rounded">
-  <a href="#/project/{{project}}/{{task}}/{{post.id}}"><i class="fa fa-cog"></i>Edit</a>
+
+  <div ng-show="post.image">
+    <img ng-src="{{post.image}}" class="img-rounded">
+    <a href="#/project/{{project}}/{{task}}/{{post.id}}"><i class="fa fa-cog"></i>Edit</a>
+  </div>
 </a>
 
 
