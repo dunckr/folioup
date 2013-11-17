@@ -1,10 +1,16 @@
 <top></top>
 <navigation></navigation>
 
-<h2>{{name}}, {{task}}</h2>
+<h2>{{project}}, {{task}}</h2>
 
 <div ng-repeat="post in posts">
   <p>{{post.comment}}</p>
+  <img ng-src="{{post.image}}" class="img-rounded">
+  <a href="#/project/{{project}}/{{task}}/{{post.id}}"><i class="fa fa-cog"></i>Edit</a>
+
+
+
+
   <!-- <post value="tasks" /> -->
 </div>
 
