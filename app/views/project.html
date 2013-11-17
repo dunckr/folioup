@@ -4,10 +4,16 @@
 <h2>{{name}}</h2>
 
 <div ng-repeat="task in tasks">
-  <p ng-bind="task"></p>
-  <a href="#/project/{{name}}/{{task}}" ng-bind="task"></a>
-  <p ng-bind="task.assignees"></p>
-  <p ng-bind="task.tasks"></p>
+  <a href="#/project/{{task.project}}/{{task.name}}">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title" ng-bind-template="{{task.name}}, {{task.project}}"></h3>
+      </div>
+      <div class="panel-body">
+        <div ng-bind="task.description"></div>
+        <div ng-bind="task.priority"></div>
+      </div>
+    </div>
+  </a>
 </div>
-
 <!-- <bottom></bottom> -->
