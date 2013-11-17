@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('folioupApp')
-  .directive 'taskBlock', [ ->
+  .directive 'taskBlock', ->
     restrict: 'E'
     scope:
       task: '=value'
@@ -13,4 +13,3 @@ angular.module('folioupApp')
         <div ng-bind="task.assignees" ng-show="task.assignees"></div>
       </div>
     '
-  ]

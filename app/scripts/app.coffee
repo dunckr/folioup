@@ -8,13 +8,6 @@ angular.module('folioupApp', [
   'wu.masonry'
 ])
   .config ['$routeProvider', ($routeProvider) ->
-  #   $routeProvider
-  #     .when '/',
-  #       templateUrl: 'views/feed.html'
-  #       controller: 'feedCtrl'
-  #     .otherwise
-  #       redirectTo: '/'
-  # ]
     $routeProvider
       .when '/',
         templateUrl: 'views/feed.html'

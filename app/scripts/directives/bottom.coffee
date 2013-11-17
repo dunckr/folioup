@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('folioupApp')
-  .directive 'bottom',[ ->
+  .directive 'bottom', ->
     restrict: 'E'
     # template: '
     #   <ul class="navbar navbar-default navbar-static-bottom" role="navigation">
@@ -19,4 +19,3 @@ angular.module('folioupApp')
     #     </ul>
     #   </div>
     # '
-  ]

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('folioupApp')
-  .directive 'post', [ ->
+  .directive 'post', ->
     restrict: 'E'
     scope:
       post: '=value'
@@ -12,4 +12,3 @@ angular.module('folioupApp')
         <img ng-src="post.img" alt="">
       </div>
     '
-  ]

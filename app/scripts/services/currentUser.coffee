@@ -14,4 +14,4 @@ class CurrentUser
     @$location.path 'login'
 
 angular.module('folioupApp')
-  .factory 'currentUser', [(request,$location) -> new CurrentUser(request, $location)]
+  .factory 'currentUser', (request,$location) -> new CurrentUser(request, $location)

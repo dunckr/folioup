@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('folioupApp')
-  .directive 'projectRow', [ ->
+  .directive 'projectRow', ->
     restrict: 'E'
     scope:
       project: '=value'
@@ -13,4 +13,3 @@ angular.module('folioupApp')
         <div ng-bind="project.assignees" ng-show="project.assignees"></div>
       </div>
     '
-  ]
