@@ -1,5 +1,3 @@
-'use strict';
-
 angular.module('folioupApp')
   .directive 'bottom', ->
     restrict: 'E'

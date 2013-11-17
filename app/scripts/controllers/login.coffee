@@ -1,5 +1,3 @@
-'use strict'
-
 class LoginCtrl
 
   constructor: (@$scope,@user,@currentUser) ->

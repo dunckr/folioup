@@ -1,5 +1,3 @@
-'use strict'
-
 class TaskCtrl
 
   constructor: (@$scope,request,$routeParams) ->

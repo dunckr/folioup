@@ -1,5 +1,3 @@
-'use strict'
-
 class ProjectsCtrl
 
   constructor: (@$scope,request) ->

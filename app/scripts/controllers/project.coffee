@@ -1,5 +1,3 @@
-'use strict'
-
 class ProjectCtrl
 
   constructor: (@$scope,request,$routeParams) ->

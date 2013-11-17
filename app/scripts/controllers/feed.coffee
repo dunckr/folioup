@@ -1,5 +1,3 @@
-'use strict'
-
 class FeedCtrl
 
   constructor: (@$scope,request) ->
