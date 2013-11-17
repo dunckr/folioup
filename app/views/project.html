@@ -1,0 +1,13 @@
+<top />
+<navigation />
+
+<h2>{{name}}</h2>
+
+<div ng-repeat="task in tasks">
+  <p ng-bind="task"></p>
+  <a href="#/project/{{name}}/{{task}}" ng-bind="task"></a>
+  <p ng-bind="task.assignees"></p>
+  <p ng-bind="task.tasks"></p>
+</div>
+
+<bottom />

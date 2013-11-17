@@ -11,14 +11,23 @@ class Request
     @fixtures.projects()
 
   getTasks: ->
-    console.log @fixtures
     @fixtures.tasks()
 
   getPosts: ->
     @fixtures.posts()
 
   getUsers: ->
-    @fixtures.users()
+    # @fixtures.users()
+    [
+      name: 'mizko'
+      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/mizko/128.jpg'
+    ,
+      name: 'chadengle'
+      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg'
+    ,
+      name: 'ManikRathee'
+      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg'
+    ]
 
   getUser: (name) ->
     for user in @fixtures.users()

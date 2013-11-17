@@ -1,0 +1,12 @@
+<form name="form" class="form-signin" ng-submit="signupForm()">
+  <h2 class="form-signin-heading">Sign in</h2>
+    <div class="input-group margin-bottom-sm">
+      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+      <input type="text" class="form-control" name="name" ng-model="user.name" placeholder="Username..." required autofocus/>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+      <input type="password" class="form-control" name="password" ng-model="user.password" placeholder="Password..." required/>
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+</form>

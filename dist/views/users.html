@@ -1,0 +1,16 @@
+<top>
+<navigation>
+
+
+<div class="page-header">
+  <h1>Team</h1>
+</div>
+
+<div masonry="">
+  <div class="masonry-brick" ng-repeat="user in users">
+    <a href="#/users/{{user.name}}"><img ng-src="{{ user.image }}" class="img-circle"></a>
+    <div ng-bind="user.name"></div>
+  </div>
+</div>
+
+<bottom>
