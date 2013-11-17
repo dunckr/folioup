@@ -1,7 +1,5 @@
-'use strict'
-
 angular.module('folioupApp')
-  .directive 'navigation', [ ->
+  .directive 'navigation', ->
     restrict: 'E'
     template: '
       <div class="masthead">
@@ -13,4 +11,3 @@ angular.module('folioupApp')
         </ul>
       </div>
     '
-  ]

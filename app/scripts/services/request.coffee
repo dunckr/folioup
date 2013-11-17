@@ -17,17 +17,7 @@ class Request
     @fixtures.posts()
 
   getUsers: ->
-    # @fixtures.users()
-    [
-      name: 'mizko'
-      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/mizko/128.jpg'
-    ,
-      name: 'chadengle'
-      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg'
-    ,
-      name: 'ManikRathee'
-      image: 'https://s3.amazonaws.com/uifaces/faces/twitter/ManikRathee/128.jpg'
-    ]
+    @fixtures.users()
 
   getUser: (name) ->
     for user in @fixtures.users()

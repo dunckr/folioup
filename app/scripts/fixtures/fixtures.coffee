@@ -3,6 +3,11 @@
 angular.module('folioupApp')
   .factory 'fixtures',[ ->
 
+    projects: ->
+      [
+        name: 'Electronics'
+      ]
+
     users: ->
       [
         name: 'mizko'
