@@ -40,4 +40,31 @@ angular.module('folioupApp')
         assignees: ['linux29','gt']
         watchers: ['_victa','syropian']
       ]
+
+    posts: ->
+      [
+        user: 'linux29'
+        timestamp: ''
+        comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident.'
+        parent: ''
+        image: ''
+      ,
+        user: 'linux29'
+        timestamp: ''
+        comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident.'
+        parent: ''
+        image: ''
+      ,
+        user: 'linux29'
+        timestamp: ''
+        comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident.'
+        parent: ''
+        image: ''
+      ]
   ]

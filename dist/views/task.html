@@ -1,12 +1,11 @@
 <top></top>
 <navigation></navigation>
 
-<h2>{{project}}</h2>
-<h2>{{name}}</h2>
+<h2>{{name}}, {{task}}</h2>
 
 <div ng-repeat="post in posts">
-  <p>{{post}}</p>
-  <post value="tasks">
+  <p>{{post.comment}}</p>
+  <!-- <post value="tasks" /> -->
 </div>
 
 <p>comment</p>
