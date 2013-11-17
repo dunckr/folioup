@@ -1,12 +1,13 @@
 angular.module('folioupApp')
   .directive 'sketch', ->
+    restrict: 'E'
+    replace: true
+    template: '<canvas></canvas>'
     link: ($scope, element, attrs) ->
       image = $scope.post?.image
+
       if image?
-
         ctx = element[0].getContext '2d'
-
-
         img = new Image()
         img.src = image
 
