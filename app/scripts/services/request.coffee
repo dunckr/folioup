@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 class Request
 
@@ -11,6 +11,7 @@ class Request
     @fixtures.projects()
 
   getTasks: ->
+    console.log @fixtures
     @fixtures.tasks()
 
   getPosts: ->
@@ -22,6 +23,8 @@ class Request
   getUser: (name) ->
     for user in @fixtures.users()
       return user if name is user.name
+    # try
+    # user for user in @fixtures.users() when user.name is name
 
 angular.module('folioupApp')
-  .factory 'request', [(fixtures) -> new Request(fixtures)]
+  .factory 'request', (fixtures) -> new Request(fixtures)
