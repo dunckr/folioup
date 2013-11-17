@@ -1,6 +1,6 @@
 'use strict'
 
-xdescribe 'Service: Request', () ->
+describe 'Service: Request', () ->
 
   request = fixtures = null
   beforeEach module 'folioupApp'

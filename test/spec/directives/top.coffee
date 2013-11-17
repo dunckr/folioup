@@ -15,13 +15,12 @@ describe 'Directive: top', () ->
     scope.$digest()
 
   it 'should have image', ->
-    # TODO workout how to get img src...
-    expect(element.find('li').html()).toEqual '<a href="#/user"><img src="URL" class="img-rounded"></a>'
+    expect( element.find('img').attr('src')).toEqual 'URL'
 
   it 'should have current user', ->
     expect(element.find('li').eq(1).text()).toEqual 'NAME'
 
   it 'should be able to logout', ->
     spyOn scope, 'logout'
-    element.find('li').eq(2).triggerHandler 'click'
+    element.find('button').triggerHandler 'click'
     expect(scope.logout).toHaveBeenCalled()
