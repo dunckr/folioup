@@ -1,17 +1,20 @@
-describe 'Controller: SketchCtrl', () ->
+describe 'Controller: Sketch', () ->
+  controller = scope = request = $routeParams = null
 
-  # load the controller's module
   beforeEach module 'folioupApp'
-
-  SketchCtrl = {}
-  scope = {}
-
-  # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope) ->
     scope = $rootScope.$new()
-    SketchCtrl = $controller 'SketchCtrl', {
+    request =
+      getTasks: jasmine.createSpy()
+    $routeParams =
+      post: 'POST'
+      project: 'PROJECT'
+      task: 'TASK'
+    controller = $controller 'Sketch',
       $scope: scope
-    }
+      request: request
+      $routeParams: $routeParams
 
-  it 'should attach a list of awesomeThings to the scope', () ->
-    expect(scope.awesomeThings.length).toBe 3
+  it 'should initialize', ->
+    expect(request.getTasks).toHaveBeenCalled()
+    expect(scope.name).toEqual 'PATH'

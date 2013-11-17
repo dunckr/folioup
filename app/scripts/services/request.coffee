@@ -15,7 +15,8 @@ class Request
     @fixtures.posts()
 
   getPost: (id) ->
-    post for post in @fixtures.posts() when post.id is id
+    for post in @fixtures.posts()
+      return post if post.id is id
 
   getUsers: ->
     @fixtures.users()
