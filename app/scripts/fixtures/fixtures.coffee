@@ -49,7 +49,7 @@ angular.module('folioupApp')
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident.'
         parent: ''
-        image: ''
+        image: 'http://www.collings.co.za/images/apple_store_1.jpg'
       ,
         user: 'linux29'
         timestamp: ''
