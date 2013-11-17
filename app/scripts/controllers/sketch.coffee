@@ -1,10 +1,10 @@
-'use strict'
+class SketchCtrl
+
+  constructor: (@$scope,request,$routeParams) ->
+    @$scope.project = $routeParams.project
+    @$scope.task = $routeParams.task
+
+    @$scope.post = request.getPost $routeParams.post
 
 angular.module('folioupApp')
-  .controller 'SketchCtrl', ['$scope', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
-  ]
+  .controller 'sketchCtrl', ['$scope','request', '$routeParams', SketchCtrl]

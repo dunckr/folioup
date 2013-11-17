@@ -43,6 +43,7 @@ angular.module('folioupApp')
 
     posts: ->
       [
+        id: '1'
         user: 'linux29'
         timestamp: ''
         comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -51,6 +52,7 @@ angular.module('folioupApp')
         parent: ''
         image: 'http://www.collings.co.za/images/apple_store_1.jpg'
       ,
+        id: '2'
         user: 'linux29'
         timestamp: ''
         comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -59,6 +61,7 @@ angular.module('folioupApp')
         parent: ''
         image: ''
       ,
+        id: '3'
         user: 'linux29'
         timestamp: ''
         comment: 'Duis aute irure dolor in reprehenderit in voluptate velit esse

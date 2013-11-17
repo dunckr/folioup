@@ -18,18 +18,21 @@ angular.module('folioupApp', [
       .when '/users',
         templateUrl: 'views/users.html'
         controller: 'usersCtrl'
-      .when '/users/:name',
+      .when '/users/:user',
         templateUrl: 'views/user.html'
         controller: 'userCtrl'
       .when '/projects',
         templateUrl: 'views/projects.html'
         controller: 'projectsCtrl'
-      .when '/project/:name',
+      .when '/project/:project',
         templateUrl: 'views/project.html'
         controller: 'projectCtrl'
-      .when '/project/:name/:task',
+      .when '/project/:project/:task',
         templateUrl: 'views/task.html'
         controller: 'taskCtrl'
+      .when '/project/:project/:task/:post',
+        templateUrl: 'views/sketch.html'
+        controller: 'sketchCtrl'
       .otherwise
         redirectTo: '/'
     ]

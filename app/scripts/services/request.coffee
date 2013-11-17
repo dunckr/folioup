@@ -14,14 +14,15 @@ class Request
   getPosts: ->
     @fixtures.posts()
 
+  getPost: (id) ->
+    post for post in @fixtures.posts() when post.id is id
+
   getUsers: ->
     @fixtures.users()
 
   getUser: (name) ->
     for user in @fixtures.users()
       return user if name is user.name
-    # try
-    # user for user in @fixtures.users() when user.name is name
 
 angular.module('folioupApp')
   .factory 'request', (fixtures) -> new Request(fixtures)
